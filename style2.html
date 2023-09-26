@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body{
+           background-color: black; 
+           font: 100% Courier New;
+           line-height: 20px;
+        }
+
+        .wrapper{
+            position: relative;
+            overflow: auto;
+        }
+
+        .container{
+            min-width: 900px;
+        }
+
+        #top{
+            color: #84c754;
+            padding: 15px;
+        }
+
+        #main{
+            padding: 10px;
+            color: #84c754;
+        }
+
+        #sidebar{
+            color: #ffffff;
+            border: 1px solid #ffffff;
+            border-radius: 4px;
+            padding: 10px;
+            width: 300px;
+            top: 0;
+            right: 0;
+            position: absolute;
+            font-size: 80%;
+        }
+
+        #menubar{
+            color: #84c754;
+        }
+
+        .menuitem{
+            color:#84c754;
+            cursor: pointer;
+        }
+
+        .menuitem_selected{
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .menuitem:hover{
+            color: #ffffff;
+        }
+        #bottom{
+            border: 1px solid #ffffff;
+            border-radius: 4px;
+            color: #ffffff;
+            font-size: 70%;
+            text-align: center;
+            padding: 10px;
+            line-height: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="top">
+        <h1>Welcome to 김가현's Homepage(22000046)</h1>
+        <p>Use the menu to select different Stylesheets</p>
+    </div>
+    <div class = "container wrapper">
+        <div id="wrapper">
+            <div id="menubar">
+                <ul>
+                    <li class="menuitem" a href="">Stylesheet 1</li>
+                    <li class="menuitem" a href="">Stylesheet 2</li>
+                    <li class="menuitem" a href="">Stylesheet 3</li>
+                    <li class="menuitem_selected" a href="">Stylesheet 4</li>
+                    <li class="menuitem" a href="">No Stylesheet</li>
+                </ul>
+            </div>
+            <div id="sidebar">
+                <h3>Side-Bar</h3> 
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                dolore magna aliquam erat volutpat.</p>
+            </div>
+            <div id="main">
+                <h1>Same Page Different Stylesheets</h1>
+                <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the
+                    layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
+                    <a href="">Stylesheet1</a>, <a href="">Stylesheet2</a>,<a href="">Stylesheet3</a>,<a href="">Stylesheet4</a></p>
+                <h2>No Styles</h2>
+                <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks
+                    like with no stylesheet: <a href="nostyle.html">No Stylesheet.</a>.</p>
+            </div>
+        </div>
+    </div>
+    <div id="bottom">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+            suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+            vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
+            iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        </p>
+    </div>
+    
+</body>
+</html>
