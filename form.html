@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <style> 
+            body{
+                font: 100% Arial;
+            }
+            #top{
+                background-color: pink;
+            }
+            #main{
+                background-color:bisque;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="top">
+            <h1>안녕하세요?</h1>
+            <p>서로를 알아간다는 것은 정말로 중요한 일이지요. <br>
+                당신에 대해 알려주세요.</p>
+        </div>
+        <div id="main">
+            <form action="/action_page.php">
+                <!-- using text -->
+                <label for="lname">성을 입력해주세요:</label><br>
+                <input type="text" id="lname" name="lname" value=""><br>
+                <label for="fname">이름을 입력해주세요:</label><br>
+                <input type="text" id="fname" name="fname" value=""><br><br>
+    
+                <!-- using date-->
+                <label for="birthday">생일은 언제인가요?</label>
+                <input type="date" id="birthday" name="birthday"><br><br>
+    
+                <!-- using radio -->
+                <label for="grade">당신의 학년을 선택해주세요:</label><br>
+                <input type="radio" id="grade1" name="grade" value="Freshman">
+                <label for="grade1">Freshman</label><br>
+                <input type="radio" id="grade2" name="grade" value="Sophomore">
+                <label for="grade2">Sophomore</label><br>
+                <input type="radio" id="grade3" name="grade" value="Junior">
+                <label for="grade3">Junior</label><br>
+                <input type="radio" id="grade4" name="grade" value="Senior">
+                <label for="grade4">Senior</label><br><br>
+    
+                <!-- using checkbox -->
+                <label for="hobby">당신의 취미를 선택해주세요:</label><br>
+                <input type="checkbox" id="hobby1" name="hobby" value="Movie">
+                <label for="hobby1"> I love watching movies.</label><br>
+                <input type="checkbox" id="hobby2" name="hobby" value="Exercise">
+                <label for="hobby2"> I love exercises.</label><br>
+                <input type="checkbox" id="hobby3" name="hobby" value="Instrument">
+                <label for="hobby3"> I love playing instruments.</label><br><br>
+                
+                <!-- using select -->
+                <label for="cars">당신의 드림카 브랜드를 선택해주세요:</label><br>
+                <select name="cars" id="cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="audi">Audi</option>
+                    <option value="benz">Benz</option>
+                    <option value="ferrari">Ferrari</option>
+                </select><br>
+                <label for="reason">왜 그 브랜드를 선택하셨나요?</label><br>
+                <input type="text" id="reason" name="reason" value=""><br>
+    
+                <!-- using textarea -->
+                <p><label for="diary">당신의 하루는 어땠나요?</label></p>
+                <textarea id="diary" name="diary" rows="4" cols="50"></textarea>
+                <br>
+                <input type="submit" value="Submit">
+              </form> 
+        </div>
+    </body>
+
+</html>
